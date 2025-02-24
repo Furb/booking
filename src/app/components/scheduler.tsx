@@ -15,7 +15,7 @@ import {
 import { L10n } from "@syncfusion/ej2-base";
 import { timelineResourceData } from "@/lib/datasource";
 import EventEditor from "./EventEditor";
-import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
+import { DataManager, UrlAdaptor, WebApiAdaptor } from "@syncfusion/ej2-data";
 
 L10n.load({
   "en-US": {
@@ -26,10 +26,8 @@ L10n.load({
 });
 
 const dataManager = new DataManager({
-  url: "/",
-  crudUrl: "/",
-  adaptor: new UrlAdaptor(),
-  crossDomain: true,
+  url: "actions/actions",
+  adaptor: new WebApiAdaptor(),
 });
 
 type RoomData = {

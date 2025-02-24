@@ -13,9 +13,8 @@ datasource db {
 
 model RoomBooking {
   id        String      @id @default(cuid())
-  title     String
-  subject   String?
-  roomId    Int
+  subject   String
+  roomId    String
   startTime DateTime
   endTime   DateTime
   createdAt DateTime    @default(now())

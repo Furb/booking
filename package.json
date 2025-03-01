@@ -12,7 +12,8 @@
     "@prisma/client": "^6.3.1",
     "@syncfusion/ej2-react-buttons": "^28.2.3",
     "@syncfusion/ej2-react-calendars": "^28.2.3",
-    "@syncfusion/ej2-react-dropdowns": "^28.2.5",
+    "@syncfusion/ej2-react-dropdowns": "^28.2.6",
+    "date-fns": "^4.1.0",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

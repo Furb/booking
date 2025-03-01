@@ -1,10 +1,8 @@
 import { DataAdaptor } from "@syncfusion/ej2-data";
-import { createRoomBooking } from "@/lib/actions";
+import { createRoomBooking } from "../../actions/actions";
 
-// Wrap the adaptor in a function
 const ServerAdapter = () => {
   return class extends DataAdaptor {
-    // Create a new booking
     async insert(dm, data) {
       const formData = new FormData();
       formData.append("Subject", data.Subject);
